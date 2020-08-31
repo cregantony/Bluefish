@@ -8,9 +8,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import Footer from "./footer"
 import Header from "./header"
 import "./layout.css"
+import styled from "styled-components"
+import logo from "../images/logo.svg"
+import Sidebar from "./sidebar"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,23 +26,41 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const MainWrapper = styled.div `
+  padding: 0;
+
+
+  main {  padding-top: 150px;}
+  `;
+
+  const GhostHeader = styled.div `
+  color: #064980;
+  position:fixed;
+  width:100%;
+  height:140px;
+  z-index: 2;
+  display:flex;
+  padding:10px;
+  background:white; border-bottom:4px solid #064980;
+  @media (min-width: 1080px) {
+    display:none;
+
+  }
+  `;
+
+  const GhostLogo = styled.img `
+  width: 200px;
+  `;
+
   return (
     <>
+       <Sidebar/>
+      <GhostHeader><GhostLogo src={logo}/> <div></div> </GhostHeader>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <MainWrapper>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+        <Footer/>
+      </MainWrapper>
     </>
   )
 }
