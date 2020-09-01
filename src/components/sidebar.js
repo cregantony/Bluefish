@@ -58,14 +58,32 @@ const StyledBurgerMenu = styled.div`
 
     .bm-overlay {
         background: rgba(255, 255, 255, 1);
-    }
+    }    
     `
+
+    const ListItem = styled.li `
+position: relative;
+padding: .6rem 20px;
+list-style-type: none;
+align-items: center;
+text-align:center;
+display:flex;
+font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+font-weight:bold;
+font-size:1.3rem;
+a {
+  text-decoration:none;
+  color:#064980;
+}`;
 
 const Sidebar = () => (
     <StyledBurgerMenu>
         <BurgerMenu right width='100%'>
         <Link to='/'>Home</Link>
-
+        <ListItem> <Link to="/about/"> About </Link>  </ListItem> 
+          <ListItem> <Link to="/brand-identity-design/"> Identity Design </Link></ListItem>
+          <ListItem> <Link to="/case-studies/"> Case Studies </Link></ListItem>
+          <ListItem> <Link to="/resources/"> Resources </Link></ListItem>
         </BurgerMenu>
     </StyledBurgerMenu>
 )

@@ -10,6 +10,7 @@ position:fixed;
 z-index:2;
 width:100%;
 display:flex;
+height: 150px;
 background:white; border-bottom:4px solid #064980;
 @media (max-width: 1080px) {
   display:none;

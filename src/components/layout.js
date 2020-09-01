@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
   color: #064980;
   position:fixed;
   width:100%;
-  height:140px;
+  height:150px;
   z-index: 2;
   display:flex;
   padding:10px;

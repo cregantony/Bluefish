@@ -1,27 +1,51 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styled from "styled-components"
+
+const Masthead = styled.h1 `
+background: #B0DBFF;
+font-size: 3rem;
+padding 5vw;
+text-align: center;
+color: #064980;
+margin:0;
+`;
+
+const PageTitle = styled.h2 `
+font-size:2rem;
+color:#064980;
+font-style:italic;
+margin: 3rem 0;
+`;
+
+const BodyParagraph = styled.p `
+font-family: roboto;
+
+font-size:1.5rem;
+font-weight: 400;
+line-height:3rem;
+`;
+
+const MainWrap = styled.div `
+margin: 0 16vw;
+`;
+
 
 const About = () => (
   <Layout>
     <SEO title="About Bluefish" />
-    <h1>BlueFish Branding Group</h1>
-    <h2>We are a remote boutique agency</h2>
-    <p>Our boutique agency combines the best talent from all over the world to deliver BIG agency results for small businesses.≈We skip the traditional agency office space in favor of traveling and working from connected locations around the world, which allows us to keep a finger on the pulse of branding and business strategies all over the globe. Our industry (and yours) is constantly evolving. So instead of letting the new creative concepts and inspiration come to us, we go to them. And the creative inspiration? Off. The. Charts</p>
-    <section>
-        <h2>Our Name. Our Story</h2>
-        <p>Fuse [fyooz] verb. 
-        <br/> 
-        Join or blend to form a single entity.
-        <br/> 
-        Fuze  noun.
-        <br/> 
-        Any ignitor that is used to initiate the burning of propellent.
-
-        <br/> 
-        Fuse and Fuze. These two words are really the core of what we offer. By fusing our individual talents and specialties, we light the spark for our small business clients, propelling them to new heights with branding that levels the playing field with big budget competitors.</p>
-    
-    </section>
+    <Masthead>About Bluefish</Masthead>
+    <MainWrap>
+      <PageTitle>We are a remote boutique agency</PageTitle>
+      <BodyParagraph>
+        Our boutique agency combines the best talent from all over the world to deliver BIG agency results for small businesses. We skip the traditional agency office space in favor of traveling and working from connected locations around the world, which allows us to keep a finger on the pulse of branding and business strategies all over the globe. Our industry (and yours) is constantly evolving. So instead of letting the new creative concepts and inspiration come to us, we go to them. And the creative inspiration? Off. The. Charts
+      </BodyParagraph>
+      <PageTitle>Our Name. Our Story</PageTitle>
+      <BodyParagraph>
+        Bluefish [bloo - fish] noun.
+      </BodyParagraph>
+    </MainWrap>
   </Layout>
 )
 
