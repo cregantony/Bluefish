@@ -2,22 +2,14 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import Masthead from "../components/masthead"
 
-
-const Masthead = styled.section `
-
-display:flex;
-margin-left:10rem;
-margin-right:10rem;
-align-items: center;
-color:#064980;
-`;
 
 const IdentityDesign = () => (
 
   <Layout>
     <SEO title="Brand Identity and Package Design" />
-    <Masthead>
+    <Masthead Titletext="Branding, identity design, and logos: what’s the difference?"/>
       <div>
         <h1>Branding, identity design, and logos: what’s the difference?</h1>
         <p>Business magazines and websites are sprinkled with terms like branding, brand identity, logo design, corporate identity, and brand strategy. Different terms can describe the same thing. Sometimes the same term is used to describe different things. Confusing! </p>
@@ -72,7 +64,7 @@ What that system looks like should be based on research and strategy. What’s t
 <button>View The Process</button>
 
       </div>
-    </Masthead>
+    
   </Layout>
 )
 

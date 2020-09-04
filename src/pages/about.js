@@ -2,15 +2,9 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import Masthead from "../components/masthead"
 
-const Masthead = styled.h1 `
-background: #B0DBFF;
-font-size: 3rem;
-padding 5vw;
-text-align: center;
-color: #064980;
-margin:0;
-`;
+
 
 const PageTitle = styled.h2 `
 font-size:2rem;
@@ -35,7 +29,7 @@ margin: 0 16vw;
 const About = () => (
   <Layout>
     <SEO title="About Bluefish" />
-    <Masthead>About Bluefish</Masthead>
+    <Masthead Titletext="About Bluefish"/>
     <MainWrap>
       <PageTitle>We are a remote boutique agency</PageTitle>
       <BodyParagraph>
