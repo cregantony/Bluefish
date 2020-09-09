@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styled from "styled-components"
 import Masthead from "../components/masthead"
+import StyledLayout from "../components/styledlayout"
 
 
 const IdentityDesign = () => (
@@ -10,7 +10,7 @@ const IdentityDesign = () => (
   <Layout>
     <SEO title="Brand Identity and Package Design" />
     <Masthead Titletext="Branding, identity design, and logos: what’s the difference?"/>
-      <div>
+      <StyledLayout>
         <h1>Branding, identity design, and logos: what’s the difference?</h1>
         <p>Business magazines and websites are sprinkled with terms like branding, brand identity, logo design, corporate identity, and brand strategy. Different terms can describe the same thing. Sometimes the same term is used to describe different things. Confusing! </p>
         <p> As a brand identity designer, I want to be clear with my clients about what I do (and also what no designer can do for you.)</p>
@@ -63,7 +63,7 @@ Sometimes when you’re watching a TV commercial, you can guess who it’s for b
 What that system looks like should be based on research and strategy. What’s the main idea behind your business? Why are you doing this? What are your values and ways of working? Who are the kindred spirits who will like what you’re doing? What do they need and respond to? Insights about you, combined with insights about them, will shape your brand identity. When your design connects both parties, you’ve done it right.</p>
 <button>View The Process</button>
 
-      </div>
+      </StyledLayout>
     
   </Layout>
 )

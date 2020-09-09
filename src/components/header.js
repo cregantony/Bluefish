@@ -22,18 +22,14 @@ padding: .6rem 1.5875rem;
 display: flex;
 align-items: center;
 flex: 1 1 auto;
+overflow:hidden;
 `;
 
 const Logo = styled.img `
 width:250px;
 `
 
-const HeaderMenu = styled.ul `
-display:flex;
-height:100%;
-width: 100%;
-margin-left:2rem;
-`;
+
 
 const ListItem = styled.li `
 position: relative;
@@ -73,6 +69,32 @@ text-align: center;
 color:#064980;
 `;
 
+const Dropdown = styled.div `
+float: left;
+overflow: hidden;
+`;
+
+const Content = styled.div `
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+`;
+
+const HeaderMenu = styled.ul `
+display:flex;
+height:100%;
+width: 100%;
+margin-left:2rem;
+overflow:hidden;
+${Dropdown}:hover & ${Content} {
+  display: block;
+} 
+`;
+
+
 const Header = ({ siteTitle }) => (
   
   <Container>
@@ -80,7 +102,14 @@ const Header = ({ siteTitle }) => (
         <Link to="/"> <Logo src={logo} alt= "Bluefish Branding Group"/> </Link>
         <HeaderMenu>
           <ListItem> <Link to="/about/"> About </Link>  </ListItem> 
-          <ListItem> <Link to="/brand-identity-design/"> Identity Design </Link></ListItem>
+          <Dropdown>       
+            <ListItem> <Link to="/brand-identity-design/"> Identity Design </Link></ListItem>
+            <Content> 
+              <li>Item1</li>
+              <li>Item2</li>
+              <li>Item3</li>
+            </Content>
+          </Dropdown>
           <ListItem> <Link to="/case-studies/"> Case Studies </Link></ListItem>
           <ListItem> <Link to="/resources/"> Resources </Link></ListItem>
         </HeaderMenu>      
