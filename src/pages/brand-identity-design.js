@@ -11,7 +11,7 @@ const IdentityDesign = () => (
     <SEO title="Brand Identity and Package Design" />
     <Masthead Titletext="Branding, identity design, and logos: what’s the difference?"/>
       <StyledLayout>
-        <h1>Branding, identity design, and logos: what’s the difference?</h1>
+        <h2>Branding, identity design, and logos: what’s the difference?</h2>
         <p>Business magazines and websites are sprinkled with terms like branding, brand identity, logo design, corporate identity, and brand strategy. Different terms can describe the same thing. Sometimes the same term is used to describe different things. Confusing! </p>
         <p> As a brand identity designer, I want to be clear with my clients about what I do (and also what no designer can do for you.)</p>
         <img src="https://www.jessicajonesdesign.com/wp-content/uploads/2017/02/Identity-design-brand-logo-explained.png" alt="brand"/>

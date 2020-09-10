@@ -1,26 +1,17 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styled from "styled-components"
+import Masthead from "../components/masthead"
+import StyledLayout from "../components/styledlayout"
 
-
-const Masthead = styled.section `
-
-display:flex;
-padding-top:200px;
-margin-left:10rem;
-margin-right:10rem;
-align-items: center;
-color:#064980;
-`;
 
 const Pricing = () => (
 
   <Layout>
     <SEO title="Brand Identity Design Process" />
-    <Masthead>
-      <div>
-        <h1>Brand identity pricing packages</h1>
+    <Masthead Titletext="Brand identity pricing packages"/>
+      <StyledLayout>
+        <h2>Brand identity pricing packages</h2>
         <p>Brand identity pricing can vary widely. An agency might charge $30,000 to $250,000, depending on who they are and the scope of the project. But not all businesses need to invest that much. I’ve created identities for businesses and entrepreneurs for over a decade. As an independent designer, I’m often able to bring agency-level design and expertise to the same project that has a higher cost elsewhere. Below is suggested pricing for small business clients.</p>
         <section>
             <h2>Logo Package</h2>
@@ -56,9 +47,7 @@ const Pricing = () => (
         </section>
         <p>Your brand identity tool kit
 My task is to help set a look and feel for your brand and get you started. Your own in-house production designer or freelancer can take over from there, working with the style guidelines we establish.</p>
-      </div>
-    </Masthead>
+      </StyledLayout>
   </Layout>
 )
-
 export default Pricing

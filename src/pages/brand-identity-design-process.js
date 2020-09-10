@@ -1,26 +1,19 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styled from "styled-components"
+import Masthead from "../components/masthead"
+import StyledLayout from "../components/styledlayout"
 
 
-const Masthead = styled.section `
 
-display:flex;
-padding-top:200px;
-margin-left:10rem;
-margin-right:10rem;
-align-items: center;
-color:#064980;
-`;
 
 const IdentityDesignProcess = () => (
 
   <Layout>
     <SEO title="Brand Identity Design Process" />
-    <Masthead>
-      <div>
-        <h1>The brand identity design process</h1>
+    <Masthead Titletext="The brand identity design process"/>
+    <StyledLayout>
+        <h2>The brand identity design process</h2>
         <p>Whether you need just a logo or an identity system, my design process works the same way.</p>
         <img src="https://www.jessicajonesdesign.com/wp-content/uploads/2017/02/Brand-identity-design-process-1.png" alt="process"/>
         <h2>Proposal</h2>
@@ -56,8 +49,8 @@ If needed, I’ll contact printers for quotes and manage the printing process fo
 
 If you have a brand identity design project in mind, let’s talk it over!</p>
 <button>Lets Get Started</button>
-      </div>
-    </Masthead>
+      </StyledLayout>
+    
   </Layout>
 )
 

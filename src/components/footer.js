@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import background from "../images/PromoBG.svg"
 import logo from "../images/altLogo.svg"
+import { Link } from "gatsby"
 
 
 const Promo = styled.div `
@@ -87,16 +88,18 @@ const Footer = () => (
                 <Footerlogo src={logo} alt="Bluefish Branding Group"/>
                 <Links>
                     <ul>
-                        <h3>Title</h3>
-                        <Lists>List1</Lists>
-                        <Lists>List2</Lists>
-                        <Lists>List3</Lists>
+                        <h3>Our Agency</h3>
+                        <Lists><Link to="/about/"> About Us </Link></Lists>
+                        <Lists><Link to="/case-studies/"> Case Studies </Link></Lists>
+                        <Lists><Link to="/contact-bluefish-branding/"> Contact Us </Link></Lists>
+                        <Lists><Link to="/resources/"> The Resource Vault </Link></Lists>
+                        <Lists><Link to="/brand-identity-design/"> Whats Is A Brand</Link></Lists>
                     </ul>
                     <ul>
-                        <h3>Title</h3>
-                        <Lists>List1</Lists>
-                        <Lists>List2</Lists>
-                        <Lists>List3</Lists>
+                        <h3>Services</h3>
+                        <Lists><Link to="/brand-identity-design-process/"> Identity Design Process </Link></Lists>
+                        <Lists><Link to="/identity-design-package-pricing/"> Pricing Packages </Link></Lists>
+                        <Lists><Link to="/faq/"> FAQs</Link></Lists>
                     </ul>
                     <ul>
                         <h3>Title</h3>
@@ -107,7 +110,7 @@ const Footer = () => (
                 </Links>
             </FooterContainer>
         </div>
-        <Info>© {new Date().getFullYear()}, Built with love</Info>
+        <Info>© Made In {new Date().getFullYear()}, Built with love</Info>
     </div>
 )
 

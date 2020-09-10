@@ -1,26 +1,16 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styled from "styled-components"
-
-
-const Masthead = styled.section `
-
-display:flex;
-padding-top:200px;
-margin-left:10rem;
-margin-right:10rem;
-align-items: center;
-color:#064980;
-`;
+import Masthead from "../components/masthead"
+import StyledLayout from "../components/styledlayout"
 
 const Faq = () => (
 
   <Layout>
     <SEO title="Brand Identity Design Process" />
-    <Masthead>
-      <div>
-        <h1>Frequently asked questions about branding projects</h1>
+    <Masthead Titletext="Frequently asked questions about branding Identity"/>
+      <StyledLayout>
+        <h1>FAQs</h1>
         <h2>Capability</h2>
         <p>How picky should I be when getting a logo for my business?
         Very. Your brand identity—which includes your logo—is the visual face of your business to the public. People can’t help but form an impression of you based on what they see, and your logo is the most commonly used visual that represents you. Not only should it be well-executed technically, but it also needs to have the right style.
@@ -49,8 +39,7 @@ const Faq = () => (
         Web design and development is a speciality in itself, so I no longer take on web projects. I recommend clients hire a dedicated individual or firm for this. The firm can reference the brand style guide we develop to build the site. It may be possible for me to consult on the project, checking in at a couple strategic points to make sure the design is consistent with your brand.</p>
         <p>Do you do copy writing?
         I can help you with naming, taglines, mission statements, or other short messaging for your brand. But when it comes to lengthy copy for editorial guidelines, presentations, brochure, or websites, that’s not a service I provide. I can refer you to writers I know.</p>
-      </div>
-    </Masthead>
+      </StyledLayout>
   </Layout>
 )
 
