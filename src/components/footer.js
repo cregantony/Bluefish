@@ -42,7 +42,8 @@ const FooterContainer = styled.div `
 background:#064980;
 display:flex;
 justify-content: space-between;
-padding: 5rem 10rem;
+padding: 2rem 4rem;
+flex-direction:column;
 `;
 
 const Footerlogo = styled.img`
@@ -83,7 +84,7 @@ const Footer = () => (
             <h2>Your Package Design Solutions Are A Click Away</h2>
             <PromoButton><Button>Get Started</Button></PromoButton>          
         </Promo>
-        <div>
+        
             <FooterContainer>
                 <Footerlogo src={logo} alt="Bluefish Branding Group"/>
                 <Links>
@@ -109,7 +110,7 @@ const Footer = () => (
                     </ul>
                 </Links>
             </FooterContainer>
-        </div>
+        
         <Info>© Made In {new Date().getFullYear()}, Built with love</Info>
     </div>
 )

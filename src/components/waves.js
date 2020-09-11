@@ -5,6 +5,7 @@ import water from "../images/wave.svg"
 const Ocean = styled.div `
     height: 5%;
     width:100%;
+    max-width:100vw;
     position:absolute;
     bottom:0;
     left:0;
@@ -12,9 +13,9 @@ const Ocean = styled.div `
 `;
 
 const OceanContainer = styled.div `
-background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
-overflow: hidden;
-height:100%;
+display:block;
+    background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #B7E8EB 100%);
+    overflow: hidden;
 `;
 
 const wavey = keyframes`
