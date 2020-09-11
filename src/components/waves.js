@@ -41,7 +41,7 @@ const swell = keyframes`
 const Wave = styled.div `
     background: url(${water}) repeat-x; 
     position: absolute;
-    top: -128px;
+    top: -80px;
     width: 6400px;
     height: 198px;
     animation: ${wavey} 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
@@ -53,7 +53,7 @@ const Wave = styled.div `
 const SecondWave = styled.div `
     background: url(${water}) repeat-x; 
     position: absolute;
-    top: -105px;
+    top: -80px;
     width: 6400px;
     height: 198px;
     animation: ${wavey} 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite, ${swell} 7s ease -1.25s infinite;;

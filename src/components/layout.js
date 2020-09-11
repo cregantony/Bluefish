@@ -44,12 +44,11 @@ const Layout = ({ children }) => {
   background:white; border-bottom:4px solid #064980;
   @media (min-width: 1080px) {
     display:none;
-
   }
   `;
 
   const GhostLogo = styled.img `
-  width: 200px;
+  width: 160px;
   `;
 
   return (
