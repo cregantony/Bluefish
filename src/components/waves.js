@@ -7,7 +7,7 @@ const Ocean = styled.div `
     width:100%;
     max-width:100vw;
     position:absolute;
-    bottom:0;
+    bottom:-40px;
     left:0;
     background: white;
 `;
