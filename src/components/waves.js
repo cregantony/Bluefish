@@ -7,13 +7,13 @@ const Ocean = styled.div `
     width:100%;
     max-width:100vw;
     position:absolute;
-    bottom:-40px;
+    bottom:0;
+
     left:0;
     background: white;
 `;
 
 const OceanContainer = styled.div `
-display:block;
     background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #B7E8EB 100%);
     overflow: hidden;
 `;
@@ -41,7 +41,7 @@ const swell = keyframes`
 const Wave = styled.div `
     background: url(${water}) repeat-x; 
     position: absolute;
-    top: -80px;
+    top: -128px;
     width: 6400px;
     height: 198px;
     animation: ${wavey} 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
@@ -53,7 +53,7 @@ const Wave = styled.div `
 const SecondWave = styled.div `
     background: url(${water}) repeat-x; 
     position: absolute;
-    top: -80px;
+    top: -105px;
     width: 6400px;
     height: 198px;
     animation: ${wavey} 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite, ${swell} 7s ease -1.25s infinite;;

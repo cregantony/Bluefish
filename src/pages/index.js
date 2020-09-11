@@ -51,6 +51,11 @@ margin-bottom: 4rem;
 margin-top:2rem;
 `;
 
+const RiseAbove = styled.h2 `
+  z-index:99;
+  `;
+
+
 
 
 const IndexPage = () => (
@@ -66,7 +71,7 @@ const IndexPage = () => (
     </Masthead>
     
     <CaseStudies>
-    <h2>Your Products are amazing, does your current brand design say the same?</h2>
+    <RiseAbove>Your Products are amazing, does your current brand design say the same?</RiseAbove>
     <br></br>
       <h1>CASE STUDIES</h1>
       <CaseStudy1>Title</CaseStudy1>
