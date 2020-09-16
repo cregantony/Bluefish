@@ -82,6 +82,9 @@ const Sidebar = () => (
         <Link to='/'>Home</Link>
         <ListItem> <Link to="/about/"> About </Link>  </ListItem> 
           <ListItem> <Link to="/brand-identity-design/"> Identity Design </Link></ListItem>
+          <ListItem> <Link to="/brand-identity-design-process/"> Process </Link></ListItem>
+              <ListItem> <Link to="/identity-design-package-pricing/"> Pricing</Link></ListItem>
+              <ListItem> <Link to="/faq/"> FAQs</Link></ListItem>
           <ListItem> <Link to="/case-studies/"> Case Studies </Link></ListItem>
           <ListItem> <Link to="/resources/"> Resources </Link></ListItem>
         </BurgerMenu>
