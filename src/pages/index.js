@@ -8,7 +8,7 @@ import Asset2 from "../images/Asset2.svg"
 
 const Masthead = styled.section `
 display:flex;
-height: calc(100vh - 140px);
+height: calc(100vh - 95px);
 align-items: center;
 justify-content: center;
 text-align:center;
