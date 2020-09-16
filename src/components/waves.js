@@ -63,7 +63,7 @@ const OceanFix = styled.div `
 overflow: hidden;
 position: absolute;
 width: 100vw;
-bottom: 0px;
+bottom: -50px;
 `;
 
 
