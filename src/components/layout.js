@@ -30,15 +30,14 @@ const Layout = ({ children }) => {
   padding: 0;
 
 
-  main {  padding-top: 150px;}
+  main {  padding-top: 95px;}
   `;
 
   const GhostHeader = styled.div `
   color: #064980;
   position:fixed;
   width:100%;
-  height:150px;
-  z-index: 2;
+  z-index: 22;
   display:flex;
   padding:10px;
   background:white; border-bottom:4px solid #064980;
@@ -48,13 +47,16 @@ const Layout = ({ children }) => {
   `;
 
   const GhostLogo = styled.img `
-  width: 160px;
+  width: 125px;
   `;
 
   return (
     <>
-       <Sidebar/>
-      <GhostHeader><GhostLogo src={logo}/> <div></div> </GhostHeader>
+      <Sidebar/>
+      <GhostHeader>
+        <GhostLogo src={logo}/> 
+        <div></div> 
+      </GhostHeader>
       <Header siteTitle={data.site.siteMetadata.title} />
       <MainWrapper>
         <main>{children}</main>

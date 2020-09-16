@@ -52,7 +52,7 @@ margin-top:2rem;
 `;
 
 const RiseAbove = styled.h2 `
-  z-index:99;
+  z-index:2;
   `;
 
 
