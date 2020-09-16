@@ -16,6 +16,10 @@ background-image: url(${background});
 background-repeat: repeat;
 background-size: 700px;
 
+@media (max-width: 1080px) {
+  height: calc(90vh - 95px);
+}
+
 div {
   color: #064980;
 }
