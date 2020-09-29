@@ -14,6 +14,7 @@ import "./layout.css"
 import styled from "styled-components"
 import logo from "../images/logo.svg"
 import Sidebar from "./sidebar"
+import { Link } from "gatsby"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,9 +29,12 @@ const Layout = ({ children }) => {
 
   const MainWrapper = styled.div `
   padding: 0;
+  main {  padding-top: 140px;}
 
+  @media (max-width: 1080px) {
+    main {  padding-top: 95px;}
+  }
 
-  main {  padding-top: 95px;}
   `;
 
   const GhostHeader = styled.div `
@@ -55,7 +59,7 @@ const Layout = ({ children }) => {
     <>
       <Sidebar/>
       <GhostHeader>
-        <GhostLogo src={logo}/> 
+      <Link to="/"><GhostLogo src={logo} alt="Bluefish Branding Group"/></Link> 
         <div></div> 
       </GhostHeader>
       <Header siteTitle={data.site.siteMetadata.title} />

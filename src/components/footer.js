@@ -86,7 +86,7 @@ const Footer = () => (
         </Promo>
         
             <FooterContainer>
-            <Link to="../"> <Footerlogo src={logo} alt="Bluefish Branding Group"/> </Link>
+            <Link to="/"> <Footerlogo src={logo} alt="Bluefish Branding Group"/> </Link>
                 <Links>
                     <ul>
                         <h3>Our Agency</h3>
